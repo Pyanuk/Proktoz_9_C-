@@ -15,7 +15,7 @@ int main() {
     string searchChars;
     getline(std::cin, searchChars);
 
-    HMODULE hDLL = LoadLibraryW(L"DinamicLib.dll");
+    HMODULE hDLL = LoadLibrary(L"DinamicLib.dll");
     if (hDLL == NULL) {
         cerr << "Failed to load DLL." << endl;
         return 1;
